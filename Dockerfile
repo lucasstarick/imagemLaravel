@@ -13,8 +13,6 @@ RUN rm -rf /var/www/html
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-RUN chmod -R 775 storage
-
 RUN ln -s public html
 
 EXPOSE 9000
