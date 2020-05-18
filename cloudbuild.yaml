@@ -15,7 +15,7 @@ steps:
       name: 'gcr.io/cloud-builders/docker'
       args: ['exec','-t','app','cp','.env.example', '.env']
 
-    - id: "Rodando docker ps"
+    - id: "Rodando cat"
       name: 'gcr.io/cloud-builders/docker'
       args: ['exec','-t','app','cat', '.env']
 
