@@ -12,7 +12,7 @@ steps:
       args: ['exec','-t','app','composer','install']
 
     - id: "Rodando dockerizer"
-      name: 'gcr.io/cloud-builders/dockerizer'
+      name: 'gcr.io/cloud-builders/docker'
       args: ['exec','-t','app','dockerize','-template', './.docker/app/.env:.env']
 
     # - id: "Rodando dockerizer"
