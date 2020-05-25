@@ -11,13 +11,13 @@ steps:
       name: 'gcr.io/cloud-builders/docker'
       args: ['exec','-t','app','composer','install']
 
-    - id: "Rodando dockerizer"
-      name: 'gcr.io/cloud-builders/dockerizer'
-      args: [-template','./.docker/app/.env:.env']
+    # - id: "Rodando dockerizer"
+    #   name: 'gcr.io/cloud-builders/dockerizer'
+    #   args: [-template','./.docker/app/.env:.env']
 
-    # - id: "Copiando .env"
-    #   name: 'gcr.io/cloud-builders/docker'
-    #   args: ['exec','-t','app','cp','.env.example', '.env']
+    - id: "Copiando .env"
+      name: 'gcr.io/cloud-builders/docker'
+      args: ['exec','-t','app','cp','.env.example', '.env']
 
     - id: "Rodando config clear"
       name: 'gcr.io/cloud-builders/docker'
