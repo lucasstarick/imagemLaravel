@@ -23,3 +23,12 @@ https://hub.docker.com/repository/docker/lucasstarick/codeeducation
 
 ###Imagem DockerHub
 lucasstarick/codeeducation
+
+
+###Desafio 3 - Processo de CI
+###Imagem Docker Compose
+https://github.com/lucasstarick/cloud-build-docker-compose
+
+###Container Registry
+https://console.cloud.google.com/gcr/images/codeeducation-test-277613
+
